@@ -22,7 +22,7 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 		
-//		//ArrayQueue≤‚ ‘
+		//ArrayQueue≤‚ ‘
 //		ArrayQueue<Integer> queue = new ArrayQueue<>();
 //		for (int i = 0; i < 10; i++) {
 //			queue.enqueue(i);
@@ -33,7 +33,8 @@ public class Main {
 //			}
 //		}
 		
-//		//LoopQueue≤‚ ‘
+		
+		//LoopQueue≤‚ ‘
 //		LoopQueue<Integer> queue = new LoopQueue<>();
 //		for (int i = 0; i < 10; i++) {
 //			queue.enqueue(i);
@@ -45,7 +46,9 @@ public class Main {
 //		}
 		
 		
-		//ArrayQueue”ÎLoopQueue∂‘±»≤‚ ‘
+		/*
+		 * ArrayQueue°¢LoopQueue°¢LinkedListQueue∂‘±»≤‚ ‘
+		 */
 		int oprateCount = 100000;
 		
 		ArrayQueue<Integer> arrayQueue = new ArrayQueue<>();
@@ -55,6 +58,24 @@ public class Main {
 		LoopQueue<Integer> loopQueue = new LoopQueue<>();
 		double loopQueueTime = testQueue(loopQueue, oprateCount);
 		System.out.println("LoopQueue time: " + loopQueueTime + " s.");
+		
+		LinkedListQueue<Integer> linkedListQueue = new LinkedListQueue<>();
+		double linkedListQueueTime = testQueue(linkedListQueue, oprateCount);
+		System.out.println("LinkedListQueue time: " + linkedListQueueTime + " s.");
+		
+		
+		/*
+		 * LinkedListQueue≤‚ ‘
+		 */
+//		LinkedListQueue<Integer> linkedListQueue = new LinkedListQueue<>();
+//		for (int i = 0; i < 10; i++) {
+//			linkedListQueue.enqueue(i);
+//			System.out.println(linkedListQueue);
+//			if (i % 3 == 2) {
+//				linkedListQueue.dequeue();
+//				System.out.println(linkedListQueue);
+//			}
+//		}
 
 	}
 	
