@@ -16,7 +16,7 @@ public class Main {
      */
     public static void main(String[] args) {
         
-        BST<Integer> bst = new BST<>();
+        BinarySearchTree<Integer> bst = new BinarySearchTree<>();
         int nums[] = {5, 3, 6, 8, 4, 2};
         for (int i : nums) {
             bst.add(i);
@@ -24,10 +24,13 @@ public class Main {
         bst.preOrder();
         System.out.println();
         
-        bst.inOrder();
+        bst.preOrderNR();
         System.out.println();
         
-        bst.postOrder();
-        System.out.println();
+//        bst.inOrder();
+//        System.out.println();
+//        
+//        bst.postOrder();
+//        System.out.println();
     }
 }
